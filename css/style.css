@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative');
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Cinzel', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+}
+
+.ul-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+}
+
+
+.top {
+    /*max-width: 1440px;*/
+    max-width: 1280px;
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    margin: 0 auto;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    background-color: rgba(16 18 27 / 40%);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    position: relative;
+    text-transform: uppercase;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 70px;
+}
+
+.nav__item:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    top: 0;
+    right: -35px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0 0;
+}
+
+.content__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.content__right {
+    max-width: 50%;
+    text-align: right;
+}
+
+.social__list {
+    display: flex;
+    align-items: center;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.social__link {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+
+.title {
+    margin: 0;
+    font-size: 52px;
+}
+
+.content__title {
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text {
+    line-height: 22px;
+}
+
+.content__text {
+    margin-bottom: 25px;
+}
+
+.btn {
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.logo {
+    display: block;
+}
