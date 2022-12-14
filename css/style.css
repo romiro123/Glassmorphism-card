@@ -238,12 +238,12 @@ p {
 }
 
 @media (max-width: 425px) {
-    body {
-        padding: 15px 0;
+    .header__logo {
+        margin-bottom: 10px;
     }
 
     .top {
-        height: 80vh;
+        height: 95vh;
         padding: 25px;
     }
 
@@ -254,7 +254,7 @@ p {
 
     .content {
         flex-direction: column-reverse;
-        padding: 70px 0 0;
+        padding: 20px 0 0;
     }
 
     .content__right {
@@ -262,11 +262,17 @@ p {
         margin-bottom: 15px;
     }
 
+
     .content__left {
         align-items: end;
     }
 
+    .title {
+        font-size: 32px;
+    }
 
-
+    .content__text {
+        margin-bottom: 15px;
+    }
 
 }

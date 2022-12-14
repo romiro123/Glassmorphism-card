@@ -3,8 +3,8 @@ let ctx = canvas.getContext("2d", "squares");
 
 window.onresize = function () {
     w = ctx.canvas.width = window.innerWidth;
-    h = ctx.canvas.height = window.innerHeight;
-    // h = ctx.canvas.height = document.body.scrollHeight;
+    //h = ctx.canvas.height = window.innerHeight;
+    h = ctx.canvas.height = document.body.scrollHeight;
 }; window.onresize();
 
 lines = [];
