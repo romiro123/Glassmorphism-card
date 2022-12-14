@@ -238,14 +238,22 @@ p {
 }
 
 @media (max-width: 425px) {
+    .header {
+        margin-bottom: 15px;
+    }
+
     .header__logo {
         margin-bottom: 10px;
     }
 
     .top {
-        height: 95vh;
-        padding: 25px;
+        height: 90vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+
 
     .nav__list {
         overflow: scroll;
@@ -254,7 +262,7 @@ p {
 
     .content {
         flex-direction: column-reverse;
-        padding: 20px 0 0;
+        padding: 0px 0 0;
     }
 
     .content__right {
