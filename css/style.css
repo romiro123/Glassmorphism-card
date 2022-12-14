@@ -239,6 +239,7 @@ p {
 
 @media (max-width: 425px) {
     .top {
+        height: 80vh;
         padding: 25px;
     }
 
