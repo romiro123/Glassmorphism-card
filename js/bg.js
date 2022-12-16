@@ -10,7 +10,8 @@ window.onresize = function () {
 lines = [];
 
 conf = {
-    hue: 315,
+    // hue: 315,
+    hue: 220,
     opacity: 0.4,
     width: 1,
     length: 1,
@@ -19,6 +20,12 @@ conf = {
     maxLines: 300,
     shadow: true,
 };
+
+
+
+
+
+
 
 bgDots = [
     {
@@ -139,3 +146,13 @@ function render() {
     requestAnimationFrame(render);
 }
 render();
+
+
+let maxNumColor = 360;
+setInterval(function () {
+    if (conf.hue === maxNumColor) {
+        conf.hue = 0;
+    }
+    conf.hue++
+
+}, 250);
