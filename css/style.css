@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi');
-
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -21,8 +18,6 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     height: 100vh;
-    font-family: 'Kaisei+HarunoUmi', Arial, sans-serif;
-
     font-family: 'Cinzel', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -100,7 +95,7 @@ a {
     position: relative;
 }
 
-.tablinks:hover::before {
+.tablinks:hover::before, .tablinks:focus::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -108,6 +103,7 @@ a {
     bottom: -5px;
     left: 0;
     background-color: rgb(255, 255, 255);
+    -webkit-animation: fadeEffect 1.5s ease;
     animation: fadeEffect 1.5s ease;
 }
 
@@ -119,13 +115,35 @@ a {
     bottom: -5px;
     left: 0;
     background-color: rgb(255, 255, 255);
+    -webkit-animation: fadeEffect 1.5s ease;
     animation: fadeEffect 1.5s ease;
 }
 
 .btn--content {
     border-radius: 10px;
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
+    outline: 1px solid #fff;
     padding: 5px 15px;
+    -webkit-transition:
+        outline-offset .1s ease-in-out,
+        background-color .1s ease-in-out,
+        color .1s ease-in-out;
+    -o-transition:
+        outline-offset .1s ease-in-out,
+        background-color .1s ease-in-out,
+        color .1s ease-in-out;
+    transition:
+        outline-offset .1s ease-in-out,
+        background-color .1s ease-in-out,
+        color .1s ease-in-out;
+
+}
+
+.btn--content:hover, .btn--content:focus {
+    color: #000;
+    background-color: #fff;
+    outline: 1px solid #fff;
+    outline-offset: 3px;
 }
 
 .logo {
@@ -161,6 +179,10 @@ a {
 
 .logo-name {
     position: relative;
+}
+
+.logo-name:focus {
+    outline: none;
 }
 
 .logo-name__top {
@@ -244,6 +266,15 @@ a {
     display: block;
     width: 25px;
     height: 25px;
+    border-radius: 15px;
+    -webkit-transition: outline-offset .1s ease-in-out;
+    -o-transition: outline-offset .1s ease-in-out;
+    transition: outline-offset .1s ease-in-out;
+}
+
+.social__link:hover, .social__link:focus {
+    outline: 1px solid #fff;
+    outline-offset: 3px;
 }
 
 .content__right {
@@ -268,12 +299,25 @@ a {
 }
 
 .tabcontent--active {
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
     display: block;
 }
 
 .tabcontent {
+    -webkit-animation: fadeEffect 1.5s ease;
     animation: fadeEffect 1.5s ease;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeEffect {
