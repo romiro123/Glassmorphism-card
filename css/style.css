@@ -93,6 +93,7 @@ a {
 
 .tablinks {
     position: relative;
+    outline: none;
 }
 
 .tablinks:hover::before, .tablinks:focus::before {
