@@ -1,23 +1,19 @@
-let tabLinks = document.querySelectorAll(".tablinks");
-let tabContent = document.querySelectorAll(".tabcontent");
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.tablinks').forEach(function (stepBtn) {
+        stepBtn.addEventListener('click', function (eventStep) {
+            const path = eventStep.currentTarget.dataset.path;
+            console.log(path)
 
-tabLinks.forEach(function (el) {
-    el.addEventListener("click", openTabs);
-});
+            document.querySelectorAll('.tablinks').forEach(function (btn) {
+                btn.classList.remove('tablinks--active')
+            });
 
-function openTabs(el) {
-    let btnTarget = el.currentTarget;
-    let page = btnTarget.dataset.page;
+            eventStep.currentTarget.classList.add('tablinks--active');
 
-    tabContent.forEach(function (el) {
-        el.classList.remove("tabcontent--active");
-    });
-
-    tabLinks.forEach(function (el) {
-        el.classList.remove("tablinks--active");
-    });
-
-    document.querySelector("#" + page).classList.add("tabcontent--active");
-    btnTarget.classList.add("tablinks--active");
-}
-
+            document.querySelectorAll('.tabcontent').forEach(function (tabContent) {
+                tabContent.classList.remove('tabcontent--active')
+            });
+            document.querySelector(`[data-target="${path}"]`).classList.add('tabcontent--active')
+        });
+    })
+})

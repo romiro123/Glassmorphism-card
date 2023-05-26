@@ -21,12 +21,6 @@ conf = {
     shadow: true,
 };
 
-
-
-
-
-
-
 bgDots = [
     {
         rad: (w + h) / 2,

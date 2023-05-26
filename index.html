@@ -5,161 +5,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/icons8-s-32.png">
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="js/tabs.js"></script>
     <script defer src="js/bg.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Lorem</title>
+    <title>Company</title>
 </head>
 
 <body>
     <canvas id="canvas"></canvas>
+    <div class="container">
+        <div class="top">
+            <header class="header">
 
-    <div class="top">
-        <header class="header">
-            <a href="#" class="header__logo logo-name">
-                <!--<img class="logo" src="img/logo.svg" alt="Логотип">-->
-                <span class="logo-name__top">Blanchard</span>
-                <span class="logo-name__bottom">name company</span></a>
+                <h1 class="sr-only">Work done by Kilennikov Roman</h1>
 
-            <h1 class="sr-only">Lorem ipsum</h1>
-
-            <nav class="nav">
-                <ul class="nav__list ul-reset">
-                    <li class="nav__item">
-                        <button class="btn tablinks tablinks--active" data-page="home">
-                            <p data-title="Home">Home</p>
-                        </button>
-                    </li>
-                    <li class="nav__item">
-                        <button class="btn tablinks" data-page="about">
-                            <p data-title="About">About</p>
-                        </button>
-                    </li>
-                    <li class="nav__item">
-                        <button class="btn tablinks" data-page="projects">
-                            <p data-title="Projects">Projects</p>
-                        </button>
-                    </li>
-                    <li class="nav__item">
-                        <button class="btn tablinks" data-page="service">
-                            <p data-title="Service">Service</p>
-                        </button>
-                    </li>
-                    <li class="nav__item">
-                        <button class="btn tablinks" data-page="contacts">
-                            <p data-title="Contacts">Contacts</p>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="content">
-            <div class="content__left">
-                <span>Follow me</span>
-                <ul class="social ul-reset">
-                    <li class="social__item">
-                        <a href="#" class="social__link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Instagram w/circle"
-                                viewBox="0 0 19.2 19.2">
-                                <path style="fill:rgb(100%,100%,100%);"
-                                    d="M13.498 6.651a1.656 1.656 0 0 0-.95-.949 2.766 2.766 0 0 0-.928-.172c-.527-.024-.685-.03-2.02-.03s-1.493.006-2.02.03a2.766 2.766 0 0 0-.929.172 1.656 1.656 0 0 0-.949.95 2.766 2.766 0 0 0-.172.928c-.024.527-.03.685-.03 2.02s.006 1.493.03 2.02a2.766 2.766 0 0 0 .172.929 1.656 1.656 0 0 0 .95.949 2.766 2.766 0 0 0 .928.172c.527.024.685.03 2.02.03s1.493-.006 2.02-.03a2.766 2.766 0 0 0 .929-.172 1.656 1.656 0 0 0 .949-.95 2.766 2.766 0 0 0 .172-.928c.024-.527.03-.685.03-2.02s-.006-1.493-.03-2.02a2.766 2.766 0 0 0-.172-.929zM9.6 12.168A2.568 2.568 0 1 1 12.168 9.6 2.568 2.568 0 0 1 9.6 12.168zm2.669-4.637a.6.6 0 1 1 .6-.6.6.6 0 0 1-.6.6z" />
-                                <circle style="fill:rgb(100%,100%,100%);" cx="9.6" cy="9.6" r="1.667" />
-                                <path style="fill:rgb(100%,100%,100%);"
-                                    d="M9.6 0a9.6 9.6 0 1 0 9.6 9.6A9.6 9.6 0 0 0 9.6 0zm4.97 11.662a3.67 3.67 0 0 1-.233 1.213 2.556 2.556 0 0 1-1.462 1.462 3.67 3.67 0 0 1-1.213.233c-.534.024-.704.03-2.062.03s-1.528-.006-2.062-.03a3.67 3.67 0 0 1-1.213-.233 2.556 2.556 0 0 1-1.462-1.462 3.67 3.67 0 0 1-.233-1.213c-.024-.534-.03-.704-.03-2.062s.006-1.528.03-2.062a3.67 3.67 0 0 1 .233-1.213 2.556 2.556 0 0 1 1.462-1.462 3.67 3.67 0 0 1 1.213-.233c.534-.024.704-.03 2.062-.03s1.528.006 2.062.03a3.67 3.67 0 0 1 1.213.233 2.556 2.556 0 0 1 1.462 1.462 3.67 3.67 0 0 1 .233 1.213c.024.534.03.704.03 2.062s-.006 1.528-.03 2.062z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://github.com/romiro123" class="social__link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 64 64" width="25px" height="25px">
-                                <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
-                                    d="M 32 0.3125 C 14.5 0.3125 0.3125 14.5 0.3125 32 C 0.3125 46.960938 10.6875 59.496094 24.632812 62.816406 C 23.910156 62.644531 23.195312 62.453125 22.492188 62.234375 L 22.492188 54.972656 C 22.492188 54.972656 21.304688 55.371094 19.722656 55.371094 C 15.289062 55.371094 13.445312 51.414062 12.988281 49.429688 C 12.707031 48.21875 11.980469 47.070312 11.195312 46.371094 C 10.261719 45.535156 9.824219 45.535156 9.820312 45.25 C 9.804688 44.652344 10.621094 44.675781 11.007812 44.675781 C 12.988281 44.675781 14.488281 46.78125 15.1875 47.871094 C 16.914062 50.5625 18.765625 51.011719 19.722656 51.011719 C 20.910156 51.011719 21.9375 50.835938 22.640625 50.492188 C 22.96875 48.191406 23.992188 46.140625 25.664062 44.675781 C 18.230469 43.1875 12.988281 38.925781 12.988281 32 C 12.988281 28.429688 14.417969 25.152344 16.804688 22.503906 C 16.5625 21.8125 16.15625 20.414062 16.15625 18.136719 C 16.15625 16.632812 16.261719 14.785156 16.949219 12.988281 C 16.949219 12.988281 21.46875 13.019531 25.730469 17.054688 C 27.695312 16.484375 29.800781 16.15625 32 16.15625 C 34.199219 16.15625 36.304688 16.484375 38.269531 17.054688 C 42.53125 13.019531 47.050781 12.988281 47.050781 12.988281 C 47.742188 14.785156 47.84375 16.632812 47.84375 18.136719 C 47.84375 20.59375 47.515625 22.023438 47.316406 22.640625 C 49.628906 25.265625 51.011719 28.496094 51.011719 32 C 51.011719 38.925781 45.769531 43.1875 38.335938 44.675781 C 40.320312 46.417969 41.507812 48.957031 41.507812 51.804688 L 41.507812 62.234375 C 40.804688 62.453125 40.089844 62.644531 39.367188 62.816406 C 53.3125 59.496094 63.6875 46.960938 63.6875 32 C 63.6875 14.5 49.5 0.3125 32 0.3125 Z M 34.210938 63.601562 C 33.480469 63.652344 32.742188 63.6875 32 63.6875 C 32.742188 63.6875 33.476562 63.652344 34.210938 63.601562 Z M 39.050781 62.890625 C 37.632812 63.214844 36.179688 63.441406 34.695312 63.566406 C 36.179688 63.441406 37.632812 63.210938 39.050781 62.890625 Z M 32 63.6875 C 31.257812 63.6875 30.519531 63.652344 29.789062 63.601562 C 30.523438 63.652344 31.257812 63.6875 32 63.6875 Z M 29.304688 63.566406 C 27.820312 63.441406 26.367188 63.214844 24.949219 62.890625 C 26.367188 63.210938 27.820312 63.441406 29.304688 63.566406 Z M 29.304688 63.566406 " />
-                            </svg>
-
-                        </a>
-                    </li>
-
-                    <li class="social__item">
-                        <a href="https://t.me/kilennikov" class="social__link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 50 50" width="25px" height="25px">
-                                <g id="surface25938497">
+                <nav class="nav">
+                    <ul class="nav__list ul-reset">
+                        <li class="nav__item">
+                            <button class="btn tablinks tablinks--active" data-path="home"> Home </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="btn tablinks" data-path="services"> Services </button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="btn tablinks" data-path="document">Documents</button>
+                        </li>
+                        <li class="nav__item">
+                            <button class="btn tablinks" data-path="contacts"> Contacts </button>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__logo logo-name">
+                    <span class="logo-name__top">Blanchard</span>
+                    <span class="logo-name__bottom">name company</span>
+                </a>
+            </header>
+            <main class="content">
+                <div class="content__left">
+                    <span>Follow us</span>
+                    <ul class="social ul-reset">
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/roman.sk_" class="social__link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" data-name="Instagram w/circle"
+                                    viewBox="0 0 19.2 19.2">
+                                    <path style="fill:rgb(100%,100%,100%);"
+                                        d="M13.498 6.651a1.656 1.656 0 0 0-.95-.949 2.766 2.766 0 0 0-.928-.172c-.527-.024-.685-.03-2.02-.03s-1.493.006-2.02.03a2.766 2.766 0 0 0-.929.172 1.656 1.656 0 0 0-.949.95 2.766 2.766 0 0 0-.172.928c-.024.527-.03.685-.03 2.02s.006 1.493.03 2.02a2.766 2.766 0 0 0 .172.929 1.656 1.656 0 0 0 .95.949 2.766 2.766 0 0 0 .928.172c.527.024.685.03 2.02.03s1.493-.006 2.02-.03a2.766 2.766 0 0 0 .929-.172 1.656 1.656 0 0 0 .949-.95 2.766 2.766 0 0 0 .172-.928c.024-.527.03-.685.03-2.02s-.006-1.493-.03-2.02a2.766 2.766 0 0 0-.172-.929zM9.6 12.168A2.568 2.568 0 1 1 12.168 9.6 2.568 2.568 0 0 1 9.6 12.168zm2.669-4.637a.6.6 0 1 1 .6-.6.6.6 0 0 1-.6.6z" />
+                                    <circle style="fill:rgb(100%,100%,100%);" cx="9.6" cy="9.6" r="1.667" />
+                                    <path style="fill:rgb(100%,100%,100%);"
+                                        d="M9.6 0a9.6 9.6 0 1 0 9.6 9.6A9.6 9.6 0 0 0 9.6 0zm4.97 11.662a3.67 3.67 0 0 1-.233 1.213 2.556 2.556 0 0 1-1.462 1.462 3.67 3.67 0 0 1-1.213.233c-.534.024-.704.03-2.062.03s-1.528-.006-2.062-.03a3.67 3.67 0 0 1-1.213-.233 2.556 2.556 0 0 1-1.462-1.462 3.67 3.67 0 0 1-.233-1.213c-.024-.534-.03-.704-.03-2.062s.006-1.528.03-2.062a3.67 3.67 0 0 1 .233-1.213 2.556 2.556 0 0 1 1.462-1.462 3.67 3.67 0 0 1 1.213-.233c.534-.024.704-.03 2.062-.03s1.528.006 2.062.03a3.67 3.67 0 0 1 1.213.233 2.556 2.556 0 0 1 1.462 1.462 3.67 3.67 0 0 1 .233 1.213c.024.534.03.704.03 2.062s-.006 1.528-.03 2.062z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://github.com/romiro123" class="social__link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 64 64" width="25px" height="25px">
                                     <path
                                         style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
-                                        d="M 25 0.160156 C 38.71875 0.160156 49.839844 11.28125 49.839844 25 C 49.839844 38.71875 38.71875 49.839844 25 49.839844 C 11.28125 49.839844 0.160156 38.71875 0.160156 25 C 0.160156 11.28125 11.28125 0.160156 25 0.160156 Z M 33.570312 35.125 C 34.027344 33.722656 36.167969 19.753906 36.429688 17 C 36.511719 16.164062 36.246094 15.613281 35.730469 15.363281 C 35.105469 15.0625 34.183594 15.214844 33.109375 15.601562 C 31.640625 16.132812 12.832031 24.117188 11.746094 24.578125 C 10.71875 25.015625 9.742188 25.492188 9.742188 26.183594 C 9.742188 26.667969 10.03125 26.941406 10.824219 27.226562 C 11.652344 27.523438 13.738281 28.152344 14.96875 28.492188 C 16.152344 28.820312 17.5 28.535156 18.257812 28.066406 C 19.058594 27.566406 28.304688 21.378906 28.96875 20.835938 C 29.632812 20.296875 30.164062 20.988281 29.621094 21.53125 C 29.078125 22.074219 22.730469 28.238281 21.894531 29.089844 C 20.875 30.125 21.597656 31.199219 22.28125 31.628906 C 23.058594 32.121094 28.65625 35.875 29.5 36.476562 C 30.34375 37.082031 31.199219 37.355469 31.984375 37.355469 C 32.765625 37.355469 33.179688 36.324219 33.570312 35.125 Z M 33.570312 35.125 " />
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                                        d="M 32 0.3125 C 14.5 0.3125 0.3125 14.5 0.3125 32 C 0.3125 46.960938 10.6875 59.496094 24.632812 62.816406 C 23.910156 62.644531 23.195312 62.453125 22.492188 62.234375 L 22.492188 54.972656 C 22.492188 54.972656 21.304688 55.371094 19.722656 55.371094 C 15.289062 55.371094 13.445312 51.414062 12.988281 49.429688 C 12.707031 48.21875 11.980469 47.070312 11.195312 46.371094 C 10.261719 45.535156 9.824219 45.535156 9.820312 45.25 C 9.804688 44.652344 10.621094 44.675781 11.007812 44.675781 C 12.988281 44.675781 14.488281 46.78125 15.1875 47.871094 C 16.914062 50.5625 18.765625 51.011719 19.722656 51.011719 C 20.910156 51.011719 21.9375 50.835938 22.640625 50.492188 C 22.96875 48.191406 23.992188 46.140625 25.664062 44.675781 C 18.230469 43.1875 12.988281 38.925781 12.988281 32 C 12.988281 28.429688 14.417969 25.152344 16.804688 22.503906 C 16.5625 21.8125 16.15625 20.414062 16.15625 18.136719 C 16.15625 16.632812 16.261719 14.785156 16.949219 12.988281 C 16.949219 12.988281 21.46875 13.019531 25.730469 17.054688 C 27.695312 16.484375 29.800781 16.15625 32 16.15625 C 34.199219 16.15625 36.304688 16.484375 38.269531 17.054688 C 42.53125 13.019531 47.050781 12.988281 47.050781 12.988281 C 47.742188 14.785156 47.84375 16.632812 47.84375 18.136719 C 47.84375 20.59375 47.515625 22.023438 47.316406 22.640625 C 49.628906 25.265625 51.011719 28.496094 51.011719 32 C 51.011719 38.925781 45.769531 43.1875 38.335938 44.675781 C 40.320312 46.417969 41.507812 48.957031 41.507812 51.804688 L 41.507812 62.234375 C 40.804688 62.453125 40.089844 62.644531 39.367188 62.816406 C 53.3125 59.496094 63.6875 46.960938 63.6875 32 C 63.6875 14.5 49.5 0.3125 32 0.3125 Z M 34.210938 63.601562 C 33.480469 63.652344 32.742188 63.6875 32 63.6875 C 32.742188 63.6875 33.476562 63.652344 34.210938 63.601562 Z M 39.050781 62.890625 C 37.632812 63.214844 36.179688 63.441406 34.695312 63.566406 C 36.179688 63.441406 37.632812 63.210938 39.050781 62.890625 Z M 32 63.6875 C 31.257812 63.6875 30.519531 63.652344 29.789062 63.601562 C 30.523438 63.652344 31.257812 63.6875 32 63.6875 Z M 29.304688 63.566406 C 27.820312 63.441406 26.367188 63.214844 24.949219 62.890625 C 26.367188 63.210938 27.820312 63.441406 29.304688 63.566406 Z M 29.304688 63.566406 " />
+                                </svg>
 
-            <div class="content__right">
-                <div id="home" class="tabcontent tabcontent--active">
-                    <span class="content__subtitle subtitle">Lorem ipsum</span>
-                    <h2 class="content__title title">Landing page</h2>
-                    <p class="content__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, est
-                        libero
-                        dolores unde
-                        sed alias
-                        inventore quaerat consequatur quas enim perspiciatis deleniti ex architecto eligendi fuga, vel
-                        quam
-                        a sunt!</p>
-                    <button class="btn btn--content">Click here</button>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a href="https://t.me/kilennikov" class="social__link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 50 50" width="25px" height="25px">
+                                    <g id="surface25938497">
+                                        <path
+                                            style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                            d="M 25 0.160156 C 38.71875 0.160156 49.839844 11.28125 49.839844 25 C 49.839844 38.71875 38.71875 49.839844 25 49.839844 C 11.28125 49.839844 0.160156 38.71875 0.160156 25 C 0.160156 11.28125 11.28125 0.160156 25 0.160156 Z M 33.570312 35.125 C 34.027344 33.722656 36.167969 19.753906 36.429688 17 C 36.511719 16.164062 36.246094 15.613281 35.730469 15.363281 C 35.105469 15.0625 34.183594 15.214844 33.109375 15.601562 C 31.640625 16.132812 12.832031 24.117188 11.746094 24.578125 C 10.71875 25.015625 9.742188 25.492188 9.742188 26.183594 C 9.742188 26.667969 10.03125 26.941406 10.824219 27.226562 C 11.652344 27.523438 13.738281 28.152344 14.96875 28.492188 C 16.152344 28.820312 17.5 28.535156 18.257812 28.066406 C 19.058594 27.566406 28.304688 21.378906 28.96875 20.835938 C 29.632812 20.296875 30.164062 20.988281 29.621094 21.53125 C 29.078125 22.074219 22.730469 28.238281 21.894531 29.089844 C 20.875 30.125 21.597656 31.199219 22.28125 31.628906 C 23.058594 32.121094 28.65625 35.875 29.5 36.476562 C 30.34375 37.082031 31.199219 37.355469 31.984375 37.355469 C 32.765625 37.355469 33.179688 36.324219 33.570312 35.125 Z M 33.570312 35.125 " />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="about" class="tabcontent">
-                    <span class="content__subtitle subtitle">Lorem ipsum</span>
-                    <h2 class="content__title title">about page</h2>
-                    <p class="content__text text">about ipsum, dolor sit amet consectetur adipisicing elit. Sint, est
-                        libero
-                        dolores unde
-                        sed alias
-                        inventore quaerat consequatur quas enim perspiciatis deleniti ex architecto eligendi fuga, vel
-                        quam
-                        a sunt!</p>
-                    <button class="btn btn--content">Click about</button>
+
+                <div class="content__right">
+                    <div data-target="home" id="home" class="tabcontent tabcontent--active">
+                        <h2 class="content__title title">About</h2>
+                        <p class="content__text text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            eos laborum natus eius ducimus, atque molestiae itaque mollitia quos laboriosam ipsum quis,
+                            quaerat, delectus nostrum?
+                        </p>
+                        <p class="content__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            eos laborum natus eius ducimus, atque molestiae itaque mollitia quos laboriosam ipsum quis,
+                            quaerat, delectus nostrum atque molestiae itaque mollitia quos laboriosam ipsum quis,?</p>
+
+                        <p class="content__text text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            eos laborum natus eius ducimus, atque molestiae itaque mollitia quos laboriosam ipsum quis,
+                            quaerat, delectus nostrum?
+                        </p>
+                        <button class="btn btn--content">Connect with us </button>
+                    </div>
+                    <div data-target="services" id="services" class="tabcontent">
+                        <h2 class="content__title title">Services</h2>
+                        <ul class="content__text text ul-reset">
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam amet laboriosam
+                                    libero itaque quod qui? Iure quos ea&nbsp;sit incidunt nemo. Quaerat reiciendis
+                                    totam,
+                                    quod debitis explicabo modi. Quibusdam soluta non nemo temporibus voluptatem
+                                    accusamus esse eos aliquid reprehenderit unde voluptatum quod, dolorum ratione. Rem
+                                    quam, nisi accusamus totam voluptatem, illo, illum esse ab&nbsp;earum quasi
+                                    necessitatibus debitis fugiat atque nostrum blanditiis perspiciatis quibusdam.</p>
+                            </li>
+                            <li>
+                                <p>&mdash;&nbsp;Lorem ipsum dolor sit amet.</p>
+                            </li>
+                            <li>
+                                <p>&mdash;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </li>
+                            <li>
+                                <p>&mdash;&nbsp;Lorem ipsum dolor sit amet consectetur.</p>
+                            </li>
+                        </ul>
+                        <!--<button class="btn btn--content">Связаться с нами</button>-->
+                    </div>
+                    <div data-target="contacts" id="contacts" class="tabcontent">
+                        <h2 class="content__title title">Contacts</h2>
+
+                        <div class="content__subtitle text">
+                            <span class="subtitle">Phone</span>
+                            <a class="link" href="tel:xxxxxxxxxx">+7 (xxx) xxx-xx-xx</a>
+                        </div>
+
+                        <div class="content__subtitle text">
+                            <span class="subtitle">Address</span>
+                            <p class="">Tatarstan, Naberezhnye Chelny, Komarova street, 35
+                            </p>
+                        </div>
+
+                        <div class="content__text text">
+                            <span class="subtitle">Email</span>
+                            <a class="link" href="mailto:xxx@gmail.com">xxx@gmail.com</a>
+                        </div>
+
+                        <!--<button class="btn btn--content">Связаться с нами</button>-->
+                    </div>
+                    <div data-target="document" id="document" class="tabcontent">
+                        <h2 class="content__title title">Documents</h2>
+
+                        <div class="content__subtitle text">
+                            <span class="subtitle">Document name</span>
+                            <a class="link" target="_blank" href="">Read the documents</a>
+                        </div>
+                        <div class="content__subtitle text">
+                            <span class="subtitle">Document name</span>
+                            <a class="link" target="_blank" href="">Read the documents</a>
+                        </div>
+                        <div class="content__subtitle text">
+                            <span class="subtitle">Document name</span>
+                            <a class="link" target="_blank" href="">Read the documents</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="projects" class="tabcontent">
-                    <span class="content__subtitle subtitle">Lorem ipsum</span>
-                    <h2 class="content__title title">projects page</h2>
-                    <p class="content__text text">projects ipsum, dolor sit amet consectetur adipisicing elit. Sint, est
-                        libero
-                        dolores unde
-                        sed alias
-                        inventore quaerat consequatur quas enim perspiciatis deleniti ex architecto eligendi fuga, vel
-                        quam
-                        a sunt!</p>
-                    <button class="btn btn--content">Click projects</button>
-                </div>
-                <div id="service" class="tabcontent">
-                    <span class="content__subtitle subtitle">Lorem ipsum</span>
-                    <h2 class="content__title title">Service page</h2>
-                    <p class="content__text text">Service ipsum, dolor sit amet consectetur adipisicing elit. Sint, est
-                        libero
-                        dolores unde
-                        sed alias
-                        inventore quaerat consequatur quas enim perspiciatis deleniti ex architecto eligendi fuga, vel
-                        quam
-                        a sunt!</p>
-                    <button class="btn btn--content">Click projects</button>
-                </div>
-                <div id="contacts" class="tabcontent">
-                    <span class="content__subtitle subtitle">Lorem ipsum</span>
-                    <h2 class="content__title title">Contacts page</h2>
-                    <p class="content__text text">Contacts ipsum, dolor sit amet consectetur adipisicing elit. Sint, est
-                        libero
-                        dolores unde
-                        sed alias
-                        inventore quaerat consequatur quas enim perspiciatis deleniti ex architecto eligendi fuga, vel
-                        quam
-                        a sunt!</p>
-                    <button class="btn btn--content">Click contacts</button>
-                </div>
-            </div>
-        </main>
+            </main>
+        </div>
+
     </div>
-
 </body>
 
 </html>
